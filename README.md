@@ -1,5 +1,7 @@
 # Number to Words Converter
-
+<div style="display: flex; gap: 10px;">   
+    <img src="images/num2words.gif" width="500">
+</div>
 This Python project converts numbers into their word equivalents, capable of handling very large numbers up to Millinillion! 
 
 ## Features
