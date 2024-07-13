@@ -1,6 +1,6 @@
 # Number to Words Converter
 
-This Python project converts numbers to their word equivalents. It handles numbers up to large magnitudes by utilizing a customizable scale list, making it versatile for various applications.
+This Python project converts numbers into their word equivalents, capable of handling very large numbers up to Millinillion! 
 
 ## Features
 
