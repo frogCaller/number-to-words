@@ -7,12 +7,14 @@ This Python project converts numbers into their word equivalents, capable of han
 - Converts numbers to words
 - Handles large numbers up to millinillion
 - Formats numbers with commas for readability
+- Optional: Uses `gtts` to read the numbers aloud
 
 ## Getting Started
 
 ### Prerequisites
 
 - Python 3.x
+- Optional: `gtts` and `mpg321` for text-to-speech functionality
 
 ### Installation
 
@@ -21,7 +23,14 @@ This Python project converts numbers into their word equivalents, capable of han
    ```bash
    git clone https://github.com/frogCaller/number-to-words.git
    cd number-to-words
-
+   
+2. Create a virtual environment for text-to-speech functionality:
+   ```
+   python3 -m venv speech_env
+   source speech_env/bin/activate
+   pip install gTTS
+   pip install mpyg321
+   ```
 ## Usage
 ### Run the script:
 - python3 number_to_words.py
