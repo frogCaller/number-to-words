@@ -31,7 +31,7 @@ This Python project converts numbers into their word equivalents, capable of han
    python3 -m venv speech_env
    source speech_env/bin/activate
    pip install gTTS
-   pip install mpyg321
+   sudo apt-get install mpg321
    ```
 ## Usage
 ### Run the script:
