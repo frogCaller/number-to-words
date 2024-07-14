@@ -1,3 +1,6 @@
+#from gtts import gTTS
+#import os
+
 units = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 teens = ["", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
 tens = ["", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
@@ -5,7 +8,7 @@ tens = ["", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "ei
 def load_scales(filename):
     with open(filename, 'r') as file:
         scales = file.read().splitlines()
-    return [""] + scales 
+    return [""] + scales  # Add an empty string for the unit scale
 
 def number_to_list(number):
     return [int(char) for char in str(number)]
@@ -58,3 +61,16 @@ number_words = number_to_words(number, scales)
 print(comma_format)
 print("")
 print(number_words)
+
+
+##############
+## OPTIONAL ##
+##############
+# UNCOMMENT BELOW TO GET SPEECH FUNCTION
+
+## Generate speech
+#tts = gTTS(text=number_words, lang='en')
+#tts.save("number_words.mp3")
+
+## Play the audio
+#os.system("mpg321 number_words.mp3")
